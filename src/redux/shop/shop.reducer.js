@@ -1,9 +1,9 @@
 const INITAL_STATE = {
-    collections: [
-        {
+    collections: {
+        hats: {
             id: 1,
             title: 'Hats',
-            // routeName: 'hats',
+            routeName: 'hats',
             items: [
                 {
                     id: 1,
@@ -70,10 +70,10 @@ const INITAL_STATE = {
                 }
             ]
         },
-        {
+        sneakers: {
             id: 2,
             title: 'Sneakers',
-            // routeName: 'sneakers',
+            routeName: 'sneakers',
             items: [
                 {
                     id: 10,
@@ -133,10 +133,10 @@ const INITAL_STATE = {
                 }
             ]
         },
-        {
+        jackets: {
             id: 3,
             title: 'Jackets',
-            // routeName: 'jackets',
+            routeName: 'jackets',
             items: [
                 {
                     id: 18,
@@ -175,10 +175,10 @@ const INITAL_STATE = {
                 }
             ]
         },
-        {
+        womens: {
             id: 4,
             title: 'Womens',
-            // routeName: 'womens',
+            routeName: 'womens',
             items: [
                 {
                     id: 23,
@@ -231,10 +231,10 @@ const INITAL_STATE = {
                 }
             ]
         },
-        {
+        mens: {
             id: 5,
             title: 'Mens',
-            // routeName: 'mens',
+            routeName: 'mens',
             items: [
                 {
                     id: 30,
@@ -280,7 +280,7 @@ const INITAL_STATE = {
                 }
             ]
         }
-    ]
+    }
 }
 
 const shopReducer = (state = INITAL_STATE, action) => {
