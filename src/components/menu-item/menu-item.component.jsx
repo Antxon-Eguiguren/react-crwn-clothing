@@ -20,4 +20,4 @@ const MenuItem = ({ title, imageUrl, size, linkUrl, history }) => (
 );
 
 export default withRouter(MenuItem);
-// Usando withRouter consigo obtener las props location, history y match en el componente que quiera
+// Usando withRouter (que es un HOC) consigo obtener las props location, history y match en el componente que quiera
