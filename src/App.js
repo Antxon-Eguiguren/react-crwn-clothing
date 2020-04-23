@@ -24,6 +24,7 @@ class App extends React.Component {
     const { setCurrentUser } = this.props;
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
+        // User is Logged In, add user data to currentUser through action setCurrentUser
         const userRef = await createUserProfileDocument(userAuth);
         userRef.onSnapshot(snapShot => {
           setCurrentUser({
@@ -32,7 +33,7 @@ class App extends React.Component {
           });
         });
       } else {
-        // Add null to the currentUser (meaning that is Logged Out)
+        // Add null to the currentUser through action setCurrentUser (meaning that is Logged Out)
         setCurrentUser(userAuth);
       }
     });
